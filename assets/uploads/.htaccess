@@ -1,0 +1,18 @@
+# Protect uploads folder
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+</IfModule>
+
+# Prevent PHP execution in uploads
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Allow common image types
+<FilesMatch "\.(jpg|jpeg|jfif|jpe|png|gif|webp|svg|avif|heic|heif|bmp|tiff|tif|ico|jp2)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+Options -Indexes

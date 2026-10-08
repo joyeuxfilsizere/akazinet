@@ -1,0 +1,408 @@
+[09-Aug-2026 23:27:11 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/../config/database.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[09-Aug-2026 23:27:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/../config/database.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/settings.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[25-Sep-2026 03:52:08 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/../config/database.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[25-Sep-2026 03:52:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/../config/database.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/settings.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[25-Sep-2026 03:52:37 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/../config/database.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[25-Sep-2026 03:52:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/../config/database.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/settings.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[25-Sep-2026 03:52:37 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/../config/database.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[25-Sep-2026 03:52:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/../config/database.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/settings.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/settings.php on line 2
+[27-Sep-2026 17:00:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:00:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:01:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/index.php:128
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/index.php on line 128
+[27-Sep-2026 17:02:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[27-Sep-2026 17:02:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function render_adsense_unit() in /home/yahfyszyyb/akazinet.com/jobs.php:151
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 151
+[01-Oct-2026 09:37:10 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/components/job-context.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/job-details.php on line 7
+[01-Oct-2026 09:37:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/components/job-context.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/job-details.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/job-details.php on line 7
+[02-Oct-2026 13:20:49 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:20:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:28 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:41 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:44 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:47 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:21:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:22:19 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:22:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:23:45 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:23:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/sitemap.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:26:19 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:26:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:26:32 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:26:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:27:29 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:27:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:38:48 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:38:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/jobs.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:38:58 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:38:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:39:11 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:39:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:41:37 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:41:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:41:57 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:41:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:42:24 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:42:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:43 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:45 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:47 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:51 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:57 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:43:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:18 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/jobs.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:25 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/jobs.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:26 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/jobs.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:29 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:46:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/jobs.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:47:11 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:47:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:47:12 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:47:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:49:31 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:49:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:49:34 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:49:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:49:53 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:49:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/job-details.php(2): require_once()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:51:41 UTC] PHP Warning:  require_once(/home/yahfyszyyb/akazinet.com/config/env.php): Failed to open stream: No such file or directory in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:51:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yahfyszyyb/akazinet.com/config/env.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yahfyszyyb/akazinet.com/config/database.php:12
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/includes/header.php(2): require_once()
+#1 /home/yahfyszyyb/akazinet.com/index.php(4): require_once('/home/yahfyszyy...')
+#2 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/config/database.php on line 12
+[02-Oct-2026 13:53:07 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:53:42 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:55:00 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:21 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:21 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:21 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:22 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:22 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:23 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:24 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:24 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:24 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:24 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:24 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 13:56:27 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 14:00:37 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[02-Oct-2026 14:01:28 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:32:47 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:32:54 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:33:08 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:33:16 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:33:19 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:33:23 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:33:42 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:33:43 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:35:53 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:36:16 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:36:34 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:36:48 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:36:58 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:37:03 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 14:41:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:41:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:45:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 14:47:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 15:05:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 15:05:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 15:05:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 15:05:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28
+[03-Oct-2026 15:05:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function akazinet_not_expired_sql() in /home/yahfyszyyb/akazinet.com/jobs.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/jobs.php on line 28

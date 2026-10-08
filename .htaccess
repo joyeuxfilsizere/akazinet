@@ -1,0 +1,58 @@
+RewriteEngine On
+
+# Force HTTPS on the canonical host
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^(www\.)?akazinet\.com$ [NC]
+RewriteRule ^(.*)$ https://akazinet.com/$1 [R=301,L]
+
+# Redirect www to the canonical non-www host (duplicate content fix)
+RewriteCond %{HTTP_HOST} ^www\.akazinet\.com$ [NC]
+RewriteRule ^(.*)$ https://akazinet.com/$1 [R=301,L]
+
+# Redirect old domain (kazinet.site.je) to akazinet.com
+RewriteCond %{HTTP_HOST} ^kazinet\.site\.je$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\.kazinet\.site\.je$ [NC]
+RewriteRule ^(.*)$ https://akazinet.com/$1 [R=301,L]
+
+# --- Security: block direct HTTP access to sensitive directories -----------------
+# robots.txt cannot prevent this: Disallow only stops crawlers, not direct requests.
+RewriteRule (^|/)(config|includes|components|database)/ - [F,L]
+
+# --- Security: block direct download of sensitive/dev file types ----------------
+# NOTE: .txt is NOT in this list. ads.txt (AdSense) and robots.txt (crawler
+# directives) are plain text files that MUST stay publicly readable; blocking
+# them breaks ad serving and crawling. Stray .txt files are handled below.
+<FilesMatch "(?i)\.(sql|log|md|ini|env|bak|old|lock|sh|zip|json|yml|yaml)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Block stray .txt files (scratch dumps, config notes) while keeping the two
+# text files that are required to be public.
+RewriteRule ^(?!ads\.txt$|robots\.txt$).*\.txt$ - [F,L]
+
+# The stray build/deployment artefacts these used to guard (clean-urls-update.zip,
+# .htaccess.redirect, c1.txt, c2.txt) and the duplicated root-level config and
+# component copies (database.php, job-card.php, footer.php, whatsapp.php) have
+# all been deleted from the docroot. Their old redirect rules are removed with
+# them so no rule outlives the file it was protecting.
+
+# A root-level settings.php predates admin/settings.php and still shadows it.
+RedirectMatch 301 ^/settings\.php$ /admin/settings
+
+# Redirect .php URLs to clean extensionless URLs (canonical, for SEO and old links)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /[^\?\ ]*\.php
+RewriteRule ^(.*)\.php$ /$1 [R=301,L]
+
+# Serve sitemap.xml from sitemap.php
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Internally serve .php files for clean extensionless URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]

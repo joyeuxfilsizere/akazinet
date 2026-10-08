@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48">
+  <defs>
+    <linearGradient id="kGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3515"/>
+      <stop offset="100%" stop-color="#172d13"/>
+    </linearGradient>
+  </defs>
+  <!-- K Mark: Geometric K with upward arrow -->
+  <g transform="translate(2, 2)">
+    <rect x="0" y="0" width="44" height="44" rx="10" fill="url(#kGrad)"/>
+    <path d="M12 34 L12 14 L8 18 M12 14 L16 18" stroke="#d76f30" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M20 22 L32 10" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M20 22 L34 36" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <circle cx="34" cy="10" r="2" fill="#d76f30"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="56" y="34" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="800" fill="#172d13">
+    A<tspan fill="#172d13">kazi</tspan><tspan fill="#d76f30">Net</tspan>
+  </text>
+</svg>

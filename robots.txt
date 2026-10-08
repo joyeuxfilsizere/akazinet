@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Administrative and private areas
+Disallow: /admin
+Disallow: /login
+Disallow: /config
+Disallow: /includes
+Disallow: /components
+Disallow: /database
+Disallow: /api
+
+# Search results are thin duplicates of /jobs
+Disallow: /*?search=
+
+# Filter permutations that carry no unique content
+Disallow: /*?province=
+Disallow: /*?featured=0
+
+Sitemap: https://akazinet.com/sitemap.xml

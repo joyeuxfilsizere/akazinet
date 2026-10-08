@@ -1,0 +1,109 @@
+[22-Aug-2026 04:26:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'driver-1787372779' for key 'slug' in /home/yahfyszyyb/akazinet.com/admin/jobs.php:92
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/jobs.php(92): PDOStatement->execute()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/jobs.php on line 92
+[28-Aug-2026 09:25:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/yahfyszyyb/akazinet.com/admin/includes/header.php:76) in /home/yahfyszyyb/akazinet.com/config/database.php on line 63
+[28-Sep-2026 08:01:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 08:01:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 08:02:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 08:05:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 08:06:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/yahfyszyyb/akazinet.com/admin/includes/header.php:86) in /home/yahfyszyyb/akazinet.com/config/database.php on line 107
+[28-Sep-2026 08:07:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:31:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:31:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:32:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:32:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:32:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:32:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:56:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:57:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[28-Sep-2026 12:57:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yahfyszyyb_akazinet.announcements' doesn't exist in /home/yahfyszyyb/akazinet.com/admin/announcements.php:178
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/announcements.php(178): PDO->query()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/announcements.php on line 178
+[02-Oct-2026 14:13:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'faq_json' in 'INSERT INTO' in /home/yahfyszyyb/akazinet.com/admin/seed-guides.php:19
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/seed-guides.php(19): PDO->prepare()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/seed-guides.php on line 19
+[02-Oct-2026 14:13:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'faq_json' in 'INSERT INTO' in /home/yahfyszyyb/akazinet.com/admin/seed-guides.php:19
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/seed-guides.php(19): PDO->prepare()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/seed-guides.php on line 19
+[02-Oct-2026 14:46:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'faq_json' in 'INSERT INTO' in /home/yahfyszyyb/akazinet.com/admin/install-guides.php:122
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/install-guides.php(122): PDO->prepare()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/install-guides.php on line 122
+[02-Oct-2026 14:48:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'faq_json' in 'INSERT INTO' in /home/yahfyszyyb/akazinet.com/admin/install-guides.php:122
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/install-guides.php(122): PDO->prepare()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/install-guides.php on line 122
+[02-Oct-2026 14:52:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'faq_json' in 'INSERT INTO' in /home/yahfyszyyb/akazinet.com/admin/install-guides.php:122
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/install-guides.php(122): PDO->prepare()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/install-guides.php on line 122
+[02-Oct-2026 17:11:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'faq_json' in 'INSERT INTO' in /home/yahfyszyyb/akazinet.com/admin/seed-guides.php:19
+Stack trace:
+#0 /home/yahfyszyyb/akazinet.com/admin/seed-guides.php(19): PDO->prepare()
+#1 {main}
+  thrown in /home/yahfyszyyb/akazinet.com/admin/seed-guides.php on line 19
+[03-Oct-2026 14:36:17 UTC] AkaziNet: DB_NAME/DB_USER are not configured. Copy .env.example to .env.
+[03-Oct-2026 17:32:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/yahfyszyyb/akazinet.com/admin/includes/header.php:70) in /home/yahfyszyyb/akazinet.com/config/database.php on line 176
