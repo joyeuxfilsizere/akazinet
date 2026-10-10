@@ -213,7 +213,7 @@ require_once __DIR__ . '/../includes/navbar.php';
                 <div class="info-card">
                     <h2 class="scholarship-section-title">About This Scholarship</h2>
                     <div class="scholarship-content mt-4">
-                        <?= nl2br(sanitize($listing['description'])) ?>
+                        <?= render_rich_text($listing['description']) ?>
                     </div>
                 </div>
                 <?php endif; ?>
@@ -222,7 +222,7 @@ require_once __DIR__ . '/../includes/navbar.php';
                 <div class="info-card">
                     <h2 class="scholarship-section-title">Eligibility & Requirements</h2>
                     <div class="scholarship-content mt-4">
-                        <?= nl2br(sanitize($listing['eligibility'])) ?>
+                        <?= render_rich_text($listing['eligibility']) ?>
                     </div>
                 </div>
                 <?php endif; ?>
@@ -345,13 +345,13 @@ require_once __DIR__ . '/../includes/navbar.php';
                                 </div>
                             </div>
                             <div class="scholarship-content mt-4">
-                                <?= nl2br(sanitize($ls['description'])) ?>
+                                <?= render_rich_text($ls['description']) ?>
                             </div>
                             <?php if ($ls['eligibility']): ?>
                             <div class="mt-6">
                                 <h4 class="scholarship-section-title">Eligibility</h4>
                                 <div class="scholarship-content mt-2">
-                                    <?= nl2br(sanitize($ls['eligibility'])) ?>
+                                    <?= render_rich_text($ls['eligibility']) ?>
                                 </div>
                             </div>
                             <?php endif; ?>

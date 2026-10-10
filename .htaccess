@@ -34,7 +34,7 @@ RewriteRule (^|/)(config|includes|components|database)/ - [F,L]
 
 # Block stray .txt files (scratch dumps, config notes) while keeping the two
 # text files that are required to be public.
-RewriteRule ^(?!ads\.txt$|robots\.txt$).*\.txt$ - [F,L]
+RewriteRule ^(?!ads\.txt$|robots\.txt$|sitemap\.txt$).*\.txt$ - [F,L]
 
 # The stray build/deployment artefacts these used to guard (clean-urls-update.zip,
 # .htaccess.redirect, c1.txt, c2.txt) and the duplicated root-level config and
@@ -49,8 +49,9 @@ RedirectMatch 301 ^/settings\.php$ /admin/settings
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /[^\?\ ]*\.php
 RewriteRule ^(.*)\.php$ /$1 [R=301,L]
 
-# Serve sitemap.xml from sitemap.php
+# Serve sitemap.xml (and the plain-text sitemap.txt) from sitemap.php
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^sitemap\.txt$ sitemap.php [L]
 
 # Internally serve .php files for clean extensionless URLs
 RewriteCond %{REQUEST_FILENAME} !-d

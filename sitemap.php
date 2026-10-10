@@ -3,6 +3,15 @@ require_once __DIR__ . '/config/database.php';
 
 header('Content-Type: application/xml; charset=utf-8');
 
+// Let crawlers, browsers and any CDN cache the sitemap instead of refetching it
+// on every hit. Requiring this file starts the PHP session, whose default
+// limiter sends `no-store, no-cache, must-revalidate` plus Pragma/Expires; those
+// have to be cleared or the sitemap would stay uncacheable.
+$sitemapMaxAge = 3600;
+header('Cache-Control: public, max-age=' . $sitemapMaxAge);
+header_remove('Expires');
+header_remove('Pragma');
+
 $baseUrl = rtrim(SITE_URL, '/');
 $today = date('Y-m-d');
 
@@ -112,6 +121,19 @@ try {
         ];
     }
 } catch (PDOException $e) {
+}
+
+// A plain-text sitemap (/sitemap.txt) is served alongside the XML one. Google
+// accepts "one URL per line" text sitemaps, and they are a useful fallback if a
+// host or CDN is mangling the XML response. Both formats are generated from the
+// same $urls list, so they can never disagree about what is published.
+$requestPath = isset($_SERVER['REQUEST_URI']) ? (string)parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) : '';
+if ((isset($_GET['format']) && $_GET['format'] === 'txt') || basename($requestPath) === 'sitemap.txt') {
+    header('Content-Type: text/plain; charset=utf-8');
+    foreach ($urls as $url) {
+        echo $baseUrl . $url['loc'] . "\n";
+    }
+    exit;
 }
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

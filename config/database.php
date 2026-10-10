@@ -355,6 +355,102 @@ function contains_html($str) {
     return $str !== null && preg_match('/<[a-zA-Z!\/][^>]*>/', $str);
 }
 
+/**
+ * Bolds section headings inside plain-text listings.
+ *
+ * Scholarship and job bodies are typed into ordinary textareas rather than a
+ * rich editor, so publishers naturally put a heading on its own line:
+ *
+ *     About This Scholarship
+ *     The award covers tuition, accommodation and a monthly stipend.
+ *
+ *     Eligibility
+ *     - Rwandan national or resident
+ *
+ * None of that structure reaches the browser, so readers are left to scan one
+ * undifferentiated block. A line is treated as a heading only when it is short,
+ * is not a list item / URL / email, does not end a sentence, and is either
+ * upper case, ends with a colon, or is a terse title sitting above a longer
+ * paragraph.
+ */
+function format_plain_text_headings($text) {
+    $lines = preg_split('/\r\n|\r|\n/', $text);
+    if (!is_array($lines)) {
+        return $text;
+    }
+
+    $total = count($lines);
+    for ($i = 0; $i < $total; $i++) {
+        $line = trim($lines[$i]);
+        if ($line !== '' && looks_like_heading($line, next_non_empty_line($lines, $i))) {
+            $lines[$i] = '<strong>' . $line . '</strong>';
+        }
+    }
+
+    return implode("\n", $lines);
+}
+
+function next_non_empty_line(array $lines, $index) {
+    $total = count($lines);
+    for ($i = $index + 1; $i < $total; $i++) {
+        $candidate = trim($lines[$i]);
+        if ($candidate !== '') {
+            return $candidate;
+        }
+    }
+    return '';
+}
+
+function looks_like_heading($line, $nextLine) {
+    $length = function_exists('mb_strlen') ? mb_strlen($line, 'UTF-8') : strlen($line);
+    if (!is_int($length) || $length === 0 || $length > 70) {
+        return false;
+    }
+
+    // List items, bullets and numbered lines are content, not headings.
+    if (preg_match('/^[\-\x{2022}\x{25CF}\x{25AA}\x{2023}\x{00B7}\x{2013}\x{2014}]\s+/u', $line)
+        || preg_match('/^\d+[.)]\s+/', $line)
+        || preg_match('/^[a-z][.)]\s+/', $line)) {
+        return false;
+    }
+
+    // Links and email addresses belong to body copy.
+    if (preg_match('~(https?://|www\.|@)~i', $line)) {
+        return false;
+    }
+
+    // A full stop, comma or semicolon means the line is prose, not a heading.
+    if (preg_match('/[.,;]$/', $line)) {
+        return false;
+    }
+
+    // Headings open with a capital letter, a digit or a quote mark.
+    if (!preg_match('/^[\p{Lu}\d"\'\x{201C}\x{201D}]/u', $line)) {
+        return false;
+    }
+
+    $words = preg_split('/\s+/u', $line, -1, PREG_SPLIT_NO_EMPTY);
+    $wordCount = is_array($words) ? count($words) : 0;
+    if ($wordCount > 8) {
+        return false;
+    }
+
+    $letters = preg_replace('/[^\p{L}]/u', '', $line);
+    $upper = function_exists('mb_strtoupper') ? mb_strtoupper($letters, 'UTF-8') : strtoupper($letters);
+    if ($letters !== '' && $letters === $upper) {
+        return true;
+    }
+
+    if (substr($line, -1) === ':') {
+        return true;
+    }
+
+    // A terse, title-cased line directly above a longer paragraph reads as a
+    // heading; the same shape mid-paragraph is left untouched.
+    $nextLength = function_exists('mb_strlen') ? mb_strlen($nextLine, 'UTF-8') : strlen($nextLine);
+    return $wordCount <= 5 && is_int($nextLength) && $nextLength > $length;
+}
+
 function render_rich_text($content) {
     if ($content === null || trim($content) === '') {
         return '';
@@ -362,6 +458,7 @@ function render_rich_text($content) {
 
     if (!contains_html($content)) {
         $text = sanitize($content);
+        $text = format_plain_text_headings($text);
         $text = preg_replace('/(https?:\/\/[^\s<]+)/', '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-primary font-semibold hover:underline">$1</a>', $text);
         $text = preg_replace('/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/', '<strong>$1</strong>', $text);
         return nl2br($text);

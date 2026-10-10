@@ -18,3 +18,4 @@ Disallow: /*?province=
 Disallow: /*?featured=0
 
 Sitemap: https://akazinet.com/sitemap.xml
+Sitemap: https://akazinet.com/sitemap.txt
