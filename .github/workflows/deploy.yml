@@ -1,0 +1,111 @@
+name: Deploy changed files to live server
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      full_sync:
+        description: "Upload every tracked file (use once for the first deploy)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  ftp-deploy:
+    name: Upload changed files over FTP
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Work out which files changed
+        id: changed
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.full_sync }}" = "true" ]; then
+            echo "Full sync requested - deploying all tracked files."
+            git ls-files > changed.txt
+          else
+            before="${{ github.event.before }}"
+            after="${{ github.sha }}"
+            if [ -z "$before" ] || [ "$before" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "${before}^{commit}" 2>/dev/null; then
+              before="$(git rev-parse HEAD~1 2>/dev/null || echo '')"
+            fi
+            if [ -n "$before" ]; then
+              git diff --name-only --diff-filter=ACMR "${before}..${after}" > changed.txt || true
+            else
+              git ls-files > changed.txt
+            fi
+          fi
+
+          # Never publish secrets, dev tooling or server-generated files. This
+          # workflow only uploads (never deletes), so anything left out here is
+          # simply skipped rather than removed from the server.
+          grep -vE '(^|/)(\.env(\.|$)|\.git|\.github/)|\.sql$|\.zip$|^error_log$|^Dockerfile$|^README\.md$|^\.ftpquota$|^\.eslintrc\.json$|^c[12]\.txt$' changed.txt > files.txt || true
+
+          echo "----- Files that will be uploaded -----"
+          cat files.txt
+
+          if [ -s files.txt ]; then
+            echo "has_files=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_files=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install lftp
+        if: steps.changed.outputs.has_files == 'true'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Upload files
+        if: steps.changed.outputs.has_files == 'true'
+        shell: bash
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${FTP_SERVER:-}" ] || [ -z "${FTP_USERNAME:-}" ] || [ -z "${FTP_PASSWORD:-}" ]; then
+            echo "::error::Set the FTP_SERVER, FTP_USERNAME and FTP_PASSWORD secrets (see Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+          port="${FTP_PORT:-21}"
+          server_dir="${FTP_SERVER_DIR:-public_html}"
+          server_dir="${server_dir%/}"
+
+          # Stage only the changed files, keeping their folder structure, so the
+          # mirror uploads exactly these files and never removes anything.
+          rm -rf stage && mkdir -p stage
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            mkdir -p "stage/$(dirname "$f")"
+            cp "$f" "stage/$f"
+          done < files.txt
+
+          {
+            echo "set ftp:ssl-allow yes"
+            echo "set ftp:ssl-force no"
+            echo "set ssl:verify-certificate no"
+            echo "set net:max-retries 3"
+            echo "set net:timeout 30"
+            echo "mkdir -p $server_dir"
+            echo "cd $server_dir"
+            echo "lcd stage"
+            echo "mirror --reverse --no-perms --only-newer"
+            echo "bye"
+          } > lftp_cmds.txt
+
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "ftp://$FTP_SERVER:$port" -f lftp_cmds.txt
