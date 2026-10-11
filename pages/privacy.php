@@ -17,7 +17,7 @@ require_once __DIR__ . '/../includes/navbar.php';
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-gray max-w-none">
         <h2>1. Who We Are</h2>
         <p>AkaziNet ("we", "us", "our") is a job vacancy platform operated from <?= sanitize(SITE_ADDRESS) ?>. We publish employer-submitted job openings and scholarship listings so that Rwandan job seekers and students can find opportunities with clear, verifiable application deadlines. We are the data controller for the personal information described in this policy.</p>
-        <p>You can reach our data protection contact at <a href="mailto:kazinetrwa@gmail.com">kazinetrwa@gmail.com</a> or by post at <?= sanitize(SITE_ADDRESS) ?>.</p>
+        <p>You can reach our data protection contact at <a href="mailto:contact@akazinet.com">contact@akazinet.com</a> or by post at <?= sanitize(SITE_ADDRESS) ?>.</p>
 
         <h2>2. Information We Collect</h2>
         <h3>2.1 Information you give us</h3>
@@ -60,7 +60,7 @@ require_once __DIR__ . '/../includes/navbar.php';
         <p>You can block or delete cookies through your browser settings. Blocking essential cookies may prevent parts of the site, such as the admin dashboard, from working correctly.</p>
 
         <h2>6. Advertising Safety and Content Standards</h2>
-        <p>We review listings before publication and remove content that is misleading, fraudulent, discriminatory, or otherwise unlawful. Job advertisements on AkaziNet are not a guarantee of employment, salary, or working conditions. We strongly advise you to verify any employer independently before paying any fee, sending identity documents, or travelling for an interview. No legitimate employer will ever ask you to pay a recruitment or registration fee. Please report suspicious listings to <a href="mailto:info@akazinet.com">info@akazinet.com</a>.</p>
+        <p>We review listings before publication and remove content that is misleading, fraudulent, discriminatory, or otherwise unlawful. Job advertisements on AkaziNet are not a guarantee of employment, salary, or working conditions. We strongly advise you to verify any employer independently before paying any fee, sending identity documents, or travelling for an interview. No legitimate employer will ever ask you to pay a recruitment or registration fee. Please report suspicious listings to <a href="mailto:contact@akazinet.com">contact@akazinet.com</a>.</p>
 
         <h2>7. Data Security</h2>
         <p>We take reasonable technical and organisational measures to protect personal information, including encrypted transmission over HTTPS, restricted administrator access, and input validation on all user-submitted data. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
@@ -78,7 +78,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <li><strong>Portability</strong> — to receive your data in a machine-readable format.</li>
             <li><strong>Objection and withdrawal of consent</strong> — to object to processing based on legitimate interests, or to withdraw consent at any time where we rely on consent.</li>
         </ul>
-        <p>To exercise any of these rights, email <a href="mailto:kazinetrwa@gmail.com">kazinetrwa@gmail.com</a>. We will respond within a reasonable timeframe. If you are not satisfied with our response, you may complain to the competent data protection authority in your country.</p>
+        <p>To exercise any of these rights, email <a href="mailto:contact@akazinet.com">contact@akazinet.com</a>. We will respond within a reasonable timeframe. If you are not satisfied with our response, you may complain to the competent data protection authority in your country.</p>
 
         <h2>10. International Transfers</h2>
         <p>AkaziNet is operated from Rwanda. Some of our service providers, including Google, process data on servers located in other countries. Where personal data is transferred abroad, we rely on appropriate safeguards such as standard contractual clauses.</p>
@@ -98,7 +98,7 @@ require_once __DIR__ . '/../includes/navbar.php';
         <h2>15. How to Contact Us</h2>
         <p>If you have any questions about this privacy policy or our data practices, contact us:</p>
         <ul>
-            <li><strong>Email:</strong> <a href="mailto:kazinetrwa@gmail.com">kazinetrwa@gmail.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:contact@akazinet.com">contact@akazinet.com</a></li>
             <li><strong>Phone / WhatsApp:</strong> +250 780 092 252</li>
             <li><strong>Address:</strong> <?= sanitize(SITE_ADDRESS) ?></li>
         </ul>

@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute([$name, $email, $location, $ip, $subject, $message]);
         $success = 'Thank you for your message! We will get back to you soon.';
 
-        $adminEmail = get_setting('site_email', 'kazinetrwa@gmail.com');
+        $adminEmail = get_setting('site_email', 'contact@akazinet.com');
         $emailSubject = "New Contact Message from $name - AkaziNet";
         $emailBody = "You have received a new message from the contact form.\n\n"
             . "Name: $name\n"
@@ -75,8 +75,8 @@ require_once __DIR__ . '/../includes/navbar.php';
                 </div>
                 <h3 class="font-bold text-gray-900 mb-1">Email</h3>
                 <p class="text-sm text-gray-500 mb-3">Send us an email</p>
-                <a href="mailto:kazinetrwa@gmail.com" class="inline-flex items-center px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors">
-                    kazinetrwa@gmail.com
+                <a href="mailto:contact@akazinet.com" class="inline-flex items-center px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors">
+                    contact@akazinet.com
                 </a>
             </div>
             <div class="bg-white rounded-xl p-6 text-center border border-brand-border shadow-sm">

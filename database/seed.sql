@@ -4,7 +4,7 @@ USE kazinet;
 
 -- Default admin (password: admin123)
 INSERT INTO admins (username, email, password, full_name) VALUES
-('admin', 'admin@akazinet.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'AkaziNet Administrator');
+('admin', 'contact@akazinet.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'AkaziNet Administrator');
 
 -- Categories
 INSERT INTO categories (name, slug, description, icon) VALUES
@@ -57,7 +57,7 @@ INSERT INTO jobs (company_id, category_id, title, slug, description, responsibil
 INSERT INTO settings (setting_key, setting_value, setting_type) VALUES
 ('site_name', 'AkaziNet', 'text'),
 ('site_tagline', 'Connecting Rwandans to Career Opportunities', 'text'),
-('site_email', 'info@akazinet.com', 'text'),
+('site_email', 'contact@akazinet.com', 'text'),
 ('site_phone', '+250780092252', 'text'),
 ('whatsapp_number', '250780092252', 'text'),
 ('site_description', 'AkaziNet is Rwanda''s premier job vacancy platform, connecting talented professionals with verified career opportunities across the country.', 'textarea'),

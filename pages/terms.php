@@ -97,7 +97,7 @@ require_once __DIR__ . '/../includes/navbar.php';
         <p>These Terms are governed by and construed in accordance with the laws of the Republic of Rwanda. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the competent courts of Rwanda.</p>
 
         <h2>19. Contact</h2>
-        <p>For questions about these Terms, to report a fraudulent listing, or to request the removal of content, please contact us at <a href="mailto:kazinetrwa@gmail.com" class="text-primary font-medium hover:underline">kazinetrwa@gmail.com</a>, via the <a href="/pages/contact" class="text-primary font-medium hover:underline">Contact page</a>, or on WhatsApp at <a href="https://wa.me/250780092252" class="text-primary font-medium hover:underline" target="_blank" rel="noopener">+250 780 092 252</a>. We aim to acknowledge reports within two working days.</p>
+        <p>For questions about these Terms, to report a fraudulent listing, or to request the removal of content, please contact us at <a href="mailto:contact@akazinet.com" class="text-primary font-medium hover:underline">contact@akazinet.com</a>, via the <a href="/pages/contact" class="text-primary font-medium hover:underline">Contact page</a>, or on WhatsApp at <a href="https://wa.me/250780092252" class="text-primary font-medium hover:underline" target="_blank" rel="noopener">+250 780 092 252</a>. We aim to acknowledge reports within two working days.</p>
     </div>
 </section>
 

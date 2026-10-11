@@ -86,7 +86,7 @@ A modern, secure, and production-ready job vacancy platform built for the Rwanda
 
 ### Default Admin Credentials
 - **Username:** admin
-- **Email:** admin@akazinet.com
+- **Email:** contact@akazinet.com
 - **Password:** admin123
 
 > **Important:** Change the admin password immediately after first login.

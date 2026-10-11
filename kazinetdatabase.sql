@@ -46,7 +46,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `username`, `email`, `password`, `full_name`, `avatar`, `is_active`, `last_login`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@akazinet.com', '$2y$10$ZjuHMeW5iaZNlQx56gMxpOtMyMtK86kfjMS2kKMnQKTqrOPlpYrKi', 'AkaziNet Administrator', NULL, 1, '2026-07-29 01:31:49', '2026-07-17 10:10:51', '2026-07-29 08:31:49');
+(1, 'admin', 'contact@akazinet.com', '$2y$10$ZjuHMeW5iaZNlQx56gMxpOtMyMtK86kfjMS2kKMnQKTqrOPlpYrKi', 'AkaziNet Administrator', NULL, 1, '2026-07-29 01:31:49', '2026-07-17 10:10:51', '2026-07-29 08:31:49');
 
 -- --------------------------------------------------------
 
@@ -181,7 +181,7 @@ CREATE TABLE `contact_messages` (
 --
 
 INSERT INTO `contact_messages` (`id`, `name`, `email`, `subject`, `message`, `is_read`, `created_at`) VALUES
-(1, 'Izere Joyeux Fils', 'joyeuxizere@gmail.com', 'Contract signing issue', 'Hhh', 0, '2026-07-18 05:54:08');
+(1, 'Izere Joyeux Fils', 'contact@akazinet.com', 'Contract signing issue', 'Hhh', 0, '2026-07-18 05:54:08');
 
 -- --------------------------------------------------------
 
@@ -349,7 +349,7 @@ CREATE TABLE `settings` (
 INSERT INTO `settings` (`id`, `setting_key`, `setting_value`, `setting_type`, `created_at`, `updated_at`) VALUES
 (1, 'site_name', 'AkaziNet', 'text', '2026-07-17 10:10:51', '2026-07-17 10:10:51'),
 (2, 'site_tagline', 'Connecting Rwandans to Career Opportunities', 'text', '2026-07-17 10:10:51', '2026-07-17 10:10:51'),
-(3, 'site_email', 'samniyonzima11@gmail.com', 'text', '2026-07-17 10:10:51', '2026-07-17 16:30:46'),
+(3, 'site_email', 'contact@akazinet.com', 'text', '2026-07-17 10:10:51', '2026-07-17 16:30:46'),
 (4, 'site_phone', '+250780092252', 'text', '2026-07-17 10:10:51', '2026-07-17 10:10:51'),
 (5, 'whatsapp_number', '250780092252', 'text', '2026-07-17 10:10:51', '2026-07-17 10:10:51'),
 (6, 'site_description', 'AkaziNet is Rwanda\'s premier job vacancy platform, connecting talented professionals with verified career opportunities across the country.', 'textarea', '2026-07-17 10:10:51', '2026-07-17 10:10:51'),

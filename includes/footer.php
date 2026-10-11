@@ -89,7 +89,7 @@ $siteName = SITE_NAME;
                     </li>
                     <li class="flex items-start space-x-3">
                         <i class="fas fa-envelope mt-0.5"></i>
-                        <span>kazinetrwa@gmail.com</span>
+                        <span>contact@akazinet.com</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <i class="fas fa-map-marker-alt mt-0.5"></i>

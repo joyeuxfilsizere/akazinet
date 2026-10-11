@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SERVER['REMOTE_ADDR'] ?? null,
             ]);
 
-            $adminEmail = get_setting('site_email', 'kazinetrwa@gmail.com');
+            $adminEmail = get_setting('site_email', 'contact@akazinet.com');
             $mailSubject = 'New listing report on AkaziNet';
             $mailBody = "A job seeker reported a listing.\n\n"
                 . "Reason: " . $reportTypes[$reportType] . "\n"
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 . "Reporter email: " . ($email ?: 'not provided') . "\n"
                 . "Reporter phone: " . ($phone ?: 'not provided') . "\n\n"
                 . "Details:\n$details\n";
-            @mail($adminEmail, $mailSubject, $mailBody, 'From: ' . get_setting('site_email', 'kazinetrwa@gmail.com'));
+            @mail($adminEmail, $mailSubject, $mailBody, 'From: ' . get_setting('site_email', 'contact@akazinet.com'));
 
             $success = 'Thank you. We received your report and our team reviews every submission. '
                 . 'If the listing asks for money, do not pay and report it to the police as well.';
@@ -118,7 +118,7 @@ $breadcrumbs = [
     ['name' => 'Report a Listing', 'url' => '/pages/report-job'],
 ];
 
-$adminEmail = get_setting('site_email', 'kazinetrwa@gmail.com');
+$adminEmail = get_setting('site_email', 'contact@akazinet.com');
 
 require_once __DIR__ . '/../includes/header.php';
 require_once __DIR__ . '/../includes/navbar.php';
