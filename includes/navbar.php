@@ -36,6 +36,19 @@ body { padding-top: 92px; }
     padding: 8px 0 4px; border-top: 1px solid #e5e7eb; margin-top: 6px;
 }
 @media (max-width: 767px) { .nav-dropdown-menu.guides-menu { min-width: 320px; } }
+.nav-badge {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #1d4ed8;
+    background-color: #dbeafe;
+    border: 1px solid #bfdbfe;
+    padding: 3px 6px;
+    border-radius: 9999px;
+    white-space: nowrap;
+}
 </style>
 <nav class="floating-navbar" id="navbar">
     <div class="floating-navbar-container" id="navbarContainer">
@@ -57,6 +70,12 @@ body { padding-top: 92px; }
                 <a href="/jobs" class="nav-item <?= $currentPage === 'jobs' ? 'active' : '' ?>">
                     <span class="nav-item-text">Jobs</span>
                     <?php if ($currentPage === 'jobs'): ?><span class="nav-indicator"></span><?php endif; ?>
+                </a>
+
+                <a href="/pages/remote-jobs" class="nav-item <?= $currentPage === 'remote-jobs' ? 'active' : '' ?>">
+                    <span class="nav-item-text">Remote Jobs</span>
+                    <span class="nav-badge">Coming soon</span>
+                    <?php if ($currentPage === 'remote-jobs'): ?><span class="nav-indicator"></span><?php endif; ?>
                 </a>
 
                 <!-- Primary nav item with a topic dropdown. The section link itself
@@ -180,6 +199,10 @@ body { padding-top: 92px; }
             </a>
             <a href="/jobs" class="mobile-nav-item <?= $currentPage === 'jobs' ? 'active' : '' ?>">
                 <i class="fas fa-briefcase"></i> Jobs
+            </a>
+            <a href="/pages/remote-jobs" class="mobile-nav-item <?= $currentPage === 'remote-jobs' ? 'active' : '' ?>">
+                <i class="fas fa-laptop-house"></i> Remote Jobs
+                <span class="nav-badge">Coming soon</span>
             </a>
             <a href="/pages/guides" class="mobile-nav-item <?= $guidesActive ? 'active' : '' ?>">
                 <i class="fas fa-book-open"></i> Career Guides
