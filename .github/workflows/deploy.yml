@@ -104,7 +104,7 @@ jobs:
             echo "mkdir -p $server_dir"
             echo "cd $server_dir"
             echo "lcd stage"
-            echo "mirror --reverse --no-perms --only-newer"
+            echo "mirror --reverse --no-perms"
             echo "bye"
           } > lftp_cmds.txt
 
