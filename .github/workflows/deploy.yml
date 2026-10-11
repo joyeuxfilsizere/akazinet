@@ -108,4 +108,4 @@ jobs:
             echo "bye"
           } > lftp_cmds.txt
 
-          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "ftp://$FTP_SERVER:$port" -f lftp_cmds.txt
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "ftp://$FTP_SERVER:$port" < lftp_cmds.txt
