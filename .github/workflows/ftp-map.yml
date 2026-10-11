@@ -1,0 +1,27 @@
+name: FTP map (temp diagnostic)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: List candidate docroots
+        shell: bash
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+        run: |
+          set -euo pipefail
+          port="${FTP_PORT:-21}"
+          for d in "" akazinet.com akazinet.com/akazinet akazinet.com/public_html akazinet.com/web public_html web www html; do
+            echo "===== LIST [$d] ====="
+            lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "ftp://$FTP_SERVER:$port" -e "set ftp:ssl-allow yes; set ftp:ssl-force no; set ssl:verify-certificate no; set net:timeout 30; try { cls -la $d } catch { echo 'ERROR: cannot list' }; bye" 2>&1 || echo "lftp returned non-zero for [$d]"
+          done
