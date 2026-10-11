@@ -9,11 +9,6 @@ RewriteRule ^(.*)$ https://akazinet.com/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.akazinet\.com$ [NC]
 RewriteRule ^(.*)$ https://akazinet.com/$1 [R=301,L]
 
-# Redirect old domain (kazinet.site.je) to akazinet.com
-RewriteCond %{HTTP_HOST} ^kazinet\.site\.je$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www\.kazinet\.site\.je$ [NC]
-RewriteRule ^(.*)$ https://akazinet.com/$1 [R=301,L]
-
 # --- Security: block direct HTTP access to sensitive directories -----------------
 # robots.txt cannot prevent this: Disallow only stops crawlers, not direct requests.
 RewriteRule (^|/)(config|includes|components|database)/ - [F,L]
