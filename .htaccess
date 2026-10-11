@@ -45,9 +45,21 @@ RewriteRule ^(?!ads\.txt$|robots\.txt$|sitemap\.txt$).*\.txt$ - [F,L]
 # A root-level settings.php predates admin/settings.php and still shadows it.
 RedirectMatch 301 ^/settings\.php$ /admin/settings
 
+# The homepage lives at "/". Strip the explicit /index and /index.php forms with
+# a 301 so they can't be crawled as a second, duplicate copy of the homepage.
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteRule ^index/?$ / [R=301,L]
+
 # Redirect .php URLs to clean extensionless URLs (canonical, for SEO and old links)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /[^\?\ ]*\.php
 RewriteRule ^(.*)\.php$ /$1 [R=301,L]
+
+# Remove trailing slashes from clean-URL pages (e.g. /pages/about/ -> /pages/about)
+# so the same content is never reachable at two URLs. Real directories and the
+# root are left untouched.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
 
 # Serve sitemap.xml (and the plain-text sitemap.txt) from sitemap.php
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
