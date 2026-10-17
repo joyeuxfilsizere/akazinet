@@ -10,12 +10,12 @@ Disallow: /components
 Disallow: /database
 Disallow: /api
 
-# Search results are thin duplicates of /jobs
-Disallow: /*?search=
-
-# Filter permutations that carry no unique content
-Disallow: /*?province=
-Disallow: /*?featured=0
+# Search and filter variants are deliberately left crawlable. robots.txt used to
+# Disallow /*?search=, /*?province= and /*?featured=0, but the blocked pages also
+# served self-referencing canonicals and (for search) a noindex; a blocked URL
+# cannot be crawled, so Google never saw either signal and reported the pages as
+# "Duplicate without user-selected canonical". Consolidation and noindex both
+# require crawling, which the pages now handle themselves.
 
 Sitemap: https://akazinet.com/sitemap.xml
 Sitemap: https://akazinet.com/sitemap.txt

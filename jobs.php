@@ -9,7 +9,19 @@ if (file_exists(__DIR__ . '/components/announcements.php')) {
 $search = $_GET['search'] ?? '';
 $province = $_GET['province'] ?? '';
 $category = $_GET['category'] ?? '';
-$featured = isset($_GET['featured']) ? 1 : 0;
+
+// featured carries a value, so read the value rather than its presence: the
+// previous isset() check treated ?featured=0 as "featured only" and served an
+// exact duplicate of ?featured=1 under a self-canonical, which is how the two
+// variants ended up competing in Search Console. Values other than 1 are not a
+// filter anyone links to, so send them (keeping the rest of the query) to the
+// unfiltered listing with a permanent redirect instead of serving a copy.
+if (isset($_GET['featured']) && $_GET['featured'] !== '1') {
+    $remaining = $_GET;
+    unset($remaining['featured']);
+    redirect('/jobs' . ($remaining ? '?' . http_build_query($remaining) : ''), true);
+}
+$featured = (isset($_GET['featured']) && $_GET['featured'] === '1') ? 1 : 0;
 $page = max(1, (int)($_GET['page'] ?? 1));
 $perPage = 12;
 
@@ -101,9 +113,13 @@ foreach ($allCategories as $catItem) {
     }
 }
 
-// Keep an empty or unknown filtered view out of the index. It still returns
-// 200 and stays navigable, it is just not advertised as a distinct page.
-if ($total === 0 && ($category !== '' || $search !== '' || $province !== '' || $featured)) {
+// Search result pages are thin, query-built views of the same listings, so they
+// are never advertised as indexable: with hits they would otherwise be indexed
+// as their own pages, and empty they are duplicates of the empty listing. The
+// noindex is delivered on a crawlable 200 (robots.txt no longer blocks these
+// URLs) so Google can actually read it. Other filters keep their index only
+// while they list something.
+if ($search !== '' || ($total === 0 && ($category !== '' || $province !== '' || $featured))) {
     $meta_robots = 'noindex, follow';
 }
 
