@@ -74,7 +74,6 @@ body { padding-top: 92px; }
 
                 <a href="/pages/remote-jobs" class="nav-item <?= $currentPage === 'remote-jobs' ? 'active' : '' ?>">
                     <span class="nav-item-text">Remote Jobs</span>
-                    <span class="nav-badge">Coming soon</span>
                     <?php if ($currentPage === 'remote-jobs'): ?><span class="nav-indicator"></span><?php endif; ?>
                 </a>
 
@@ -202,7 +201,6 @@ body { padding-top: 92px; }
             </a>
             <a href="/pages/remote-jobs" class="mobile-nav-item <?= $currentPage === 'remote-jobs' ? 'active' : '' ?>">
                 <i class="fas fa-laptop-house"></i> Remote Jobs
-                <span class="nav-badge">Coming soon</span>
             </a>
             <a href="/pages/guides" class="mobile-nav-item <?= $guidesActive ? 'active' : '' ?>">
                 <i class="fas fa-book-open"></i> Career Guides

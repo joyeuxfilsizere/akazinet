@@ -30,6 +30,11 @@ function render_job_card($job) {
     </div>
 
     <div class="flex flex-wrap gap-2 mb-4">
+        <?php if (!empty($job['is_remote'])): ?>
+        <span class="inline-flex items-center text-xs text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">
+            <i class="fas fa-laptop-house mr-1.5"></i> Remote
+        </span>
+        <?php endif; ?>
         <span class="inline-flex items-center text-xs text-gray-500 bg-gray-50 px-2.5 py-1 rounded-md">
             <i class="fas fa-map-marker-alt mr-1.5 text-primary-light"></i> <?= sanitize($job['location'] ?? $job['district'] ?? 'Rwanda') ?>
         </span>

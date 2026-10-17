@@ -564,6 +564,29 @@ function paginate($total, $perPage, $currentPage) {
     ];
 }
 
+/**
+ * Whether the jobs table has the is_remote column (migration 11).
+ *
+ * Code reaches the server over FTP before migrations are run by hand on the
+ * production database, so every query and form field that references
+ * is_remote is gated on this check. Until the migration has been applied the
+ * site behaves as if the feature does not exist instead of throwing SQL
+ * errors. Result is computed once per request.
+ */
+function akazinet_jobs_remote_enabled() {
+    static $enabled = null;
+    if ($enabled === null) {
+        global $pdo;
+        try {
+            $stmt = $pdo->query("SHOW COLUMNS FROM jobs LIKE 'is_remote'");
+            $enabled = $stmt->fetch() !== false;
+        } catch (PDOException $e) {
+            $enabled = false;
+        }
+    }
+    return $enabled;
+}
+
 function format_deadline($deadline) {
     if (empty($deadline)) {
         return 'Open';

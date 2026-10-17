@@ -104,6 +104,11 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <i class="fas fa-star mr-1"></i> Featured
                                     </span>
                                     <?php endif; ?>
+                                    <?php if (!empty($job['is_remote'])): ?>
+                                    <span class="inline-flex items-center text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full mb-2 ml-2">
+                                        <i class="fas fa-laptop-house mr-1"></i> Remote
+                                    </span>
+                                    <?php endif; ?>
                                     <?php if ($isExpired): ?>
                                     <span class="inline-flex items-center text-xs font-semibold text-red-600 bg-red-50 px-2.5 py-1 rounded-full mb-2 ml-2">
                                         Expired

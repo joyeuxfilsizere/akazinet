@@ -20,6 +20,7 @@ $urls = [];
 $staticPages = [
     ['loc' => '/', 'priority' => '1.0', 'freq' => 'daily'],
     ['loc' => '/jobs', 'priority' => '0.9', 'freq' => 'daily'],
+    ['loc' => '/pages/remote-jobs', 'priority' => '0.8', 'freq' => 'daily'],
     ['loc' => '/pages/guides', 'priority' => '0.8', 'freq' => 'weekly'],
     ['loc' => '/pages/categories', 'priority' => '0.8', 'freq' => 'weekly'],
     ['loc' => '/pages/about', 'priority' => '0.6', 'freq' => 'monthly'],

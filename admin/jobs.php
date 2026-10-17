@@ -35,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $deadline = date('Y-m-d H:i:s', strtotime($deadline));
         }
         $isFeatured = isset($_POST['is_featured']) ? 1 : 0;
+        $isRemote = isset($_POST['is_remote']) ? 1 : 0;
+        $remoteEnabled = akazinet_jobs_remote_enabled();
         $status = $_POST['status'] ?? 'draft';
         $editId = (int)($_POST['edit_id'] ?? 0);
 
@@ -78,6 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($editId) {
             $sql = "UPDATE jobs SET company_name=?, category_id=?, title=?, slug=?, description=?, responsibilities=?, requirements=?, qualifications=?, benefits=?, how_to_apply=?, application_url=?, application_email=?, province=?, district=?, location=?, employment_type=?, experience_level=?, education_level=?, application_deadline=?, is_featured=?, status=?";
             $params = [$companyName, $categoryId, $title, $slug, $description, $responsibilities, $requirements, $qualifications, $benefits, $howToApply, $applicationUrl, $applicationEmail, $province, $district, $location, $employmentType, $experienceLevel, $educationLevel, $deadline, $isFeatured, $status];
+            if ($remoteEnabled) {
+                $sql .= ", is_remote=?";
+                $params[] = $isRemote;
+            }
             if ($companyLogo) {
                 $sql .= ", company_logo=?";
                 $params[] = $companyLogo;
@@ -91,8 +97,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $pdo->prepare($sql)->execute($params);
             set_flash('success', 'Job updated successfully.');
         } else {
-            $stmt = $pdo->prepare("INSERT INTO jobs (company_name, company_logo, category_id, title, slug, description, responsibilities, requirements, qualifications, benefits, how_to_apply, application_url, application_email, supporting_document, province, district, location, employment_type, experience_level, education_level, application_deadline, is_featured, status) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-            $stmt->execute([$companyName, $companyLogo, $categoryId, $title, $slug, $description, $responsibilities, $requirements, $qualifications, $benefits, $howToApply, $applicationUrl, $applicationEmail, $supportingDocument, $province, $district, $location, $employmentType, $experienceLevel, $educationLevel, $deadline, $isFeatured, $status]);
+            $columns = "company_name, company_logo, category_id, title, slug, description, responsibilities, requirements, qualifications, benefits, how_to_apply, application_url, application_email, supporting_document, province, district, location, employment_type, experience_level, education_level, application_deadline, is_featured, status";
+            $placeholders = "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?";
+            $values = [$companyName, $companyLogo, $categoryId, $title, $slug, $description, $responsibilities, $requirements, $qualifications, $benefits, $howToApply, $applicationUrl, $applicationEmail, $supportingDocument, $province, $district, $location, $employmentType, $experienceLevel, $educationLevel, $deadline, $isFeatured, $status];
+            if ($remoteEnabled) {
+                $columns .= ", is_remote";
+                $placeholders .= ",?";
+                $values[] = $isRemote;
+            }
+            $stmt = $pdo->prepare("INSERT INTO jobs ({$columns}) VALUES ({$placeholders})");
+            $stmt->execute($values);
             set_flash('success', 'Job created successfully.');
         }
         redirect('/admin/jobs');
@@ -102,6 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 require_once __DIR__ . '/includes/header.php';
 
 $categories = $pdo->query("SELECT id, name FROM categories WHERE is_active = 1 ORDER BY name")->fetchAll();
+$remoteEnabled = akazinet_jobs_remote_enabled();
 
 $editJob = null;
 if ($action === 'edit' && $id) {
@@ -152,6 +167,9 @@ if ($action === 'list'):
                         <div class="font-medium text-gray-800"><?= sanitize($j['title']) ?></div>
                         <?php if ($j['is_featured']): ?>
                         <span class="text-[10px] text-accent font-medium"><i class="fas fa-star mr-0.5"></i> Featured</span>
+                        <?php endif; ?>
+                        <?php if (!empty($j['is_remote'])): ?>
+                        <span class="text-[10px] text-blue-600 font-medium ml-2"><i class="fas fa-laptop-house mr-0.5"></i> Remote</span>
                         <?php endif; ?>
                     </td>
                     <td class="px-5 py-3 text-gray-600"><?= sanitize($j['company_name']) ?></td>
@@ -353,7 +371,7 @@ if ($action === 'list'):
 
     <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
         <h2 class="text-lg font-bold text-gray-900 mb-4"><i class="fas fa-calendar mr-2 text-primary"></i>Deadline & Options</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Application Deadline Date & Time <span class="text-gray-400 text-xs">(Your local time)</span></label>
                 <input type="datetime-local" name="application_deadline" value="<?= isset($editJob['application_deadline']) && $editJob['application_deadline'] ? date('Y-m-d\TH:i', strtotime($editJob['application_deadline'])) : '' ?>" class="w-full px-3 py-2.5 border border-gray-200 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-sm">
@@ -365,6 +383,14 @@ if ($action === 'list'):
                     <span class="text-sm font-medium text-gray-700">Featured Job</span>
                 </label>
             </div>
+            <?php if ($remoteEnabled): ?>
+            <div class="flex items-center">
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="is_remote" value="1" <?= ($editJob['is_remote'] ?? 0) ? 'checked' : '' ?> class="w-4 h-4 text-primary rounded border-gray-300 focus:ring-primary">
+                    <span class="text-sm font-medium text-gray-700">Remote Job</span>
+                </label>
+            </div>
+            <?php endif; ?>
         </div>
     </div>
 
